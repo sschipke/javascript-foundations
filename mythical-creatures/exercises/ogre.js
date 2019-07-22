@@ -6,7 +6,7 @@ class Ogre {
      }
      encounter(human) {
        human.encounterCounter++;
-          if (human.encounterCounter > 0 && human.encounterCounter % 3 === 0) {
+          if (human.encounterCounter % 3 === 0) {
                this.swingAt();
           }
           if (this.swings % 2 === 0) {human.knockedOut = true}
